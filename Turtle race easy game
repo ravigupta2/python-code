@@ -1,0 +1,22 @@
+from turtle import Turtle
+from random import randint
+
+nick = Turtle()
+nick.color('red')
+nick.shape('turtle')
+
+nick.penup()
+nick.goto(-160,100)
+nick.pendown()
+
+rick = Turtle()
+rick.color('blue')
+rick.shape('turtle')
+
+rick.penup()
+rick.goto(-120,100)
+rick.pendown()
+
+for movement in range(100):
+    nick.forward(randint(1,5))
+    rick.forward(randint(1,5))
